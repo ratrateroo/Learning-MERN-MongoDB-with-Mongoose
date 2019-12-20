@@ -27,8 +27,8 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect('mongodb+srv://ratrateroo:ultrapassword@cluster0-ikq8b.mongodb.net/places?retryWrites=true&w=majority')
-  .then(() => {
+.connect('mongodb+srv://ratrateroo:ultrapassword@cluster0-ikq8b.mongodb.net/places?retryWrites=true&w=majority')
+.then(() => {
     app.listen(5000);
   })
   .catch(err => {
